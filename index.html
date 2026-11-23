@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-wi
+    
+    dth, initial-scale=1.0">
+    <meta name="description" content="Portofolio Saskia - Mahasiswa Pendidikan Ilmu Komputer UPI. Spesialisasi dalam Pengembangan Web Interaktif dan Solusi EdTech.">
+    <title>Saskia — Frontend Web Developer & EdTech Enthusiast</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS Utama -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Notifikasi  -->
+    <div id="toast" class="toast" role="alert" aria-live="polite"></div>
+
+    <!-- Header & Navigasi -->
+    <header class="navbar-header">
+        <div class="nav-container">
+            <a href="#beranda" class="brand-logo" aria-label="Halaman Utama Saskia Kirana">
+                <span class="logo-text">Saskia Kirana<span class="dot">.</span></span>
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Buka Menu Navigasi" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#beranda" class="nav-link active">Beranda</a></li>
+                    <li><a href="#tentang" class="nav-link">Tentang</a></li>
+                    <li><a href="#pendidikan" class="nav-link">Akademik</a></li>
+                    <li><a href="#keahlian" class="nav-link">Keahlian</a></li>
+                    <li><a href="#proyek" class="nav-link">Proyek</a></li>
+                    <li><a href="#kontak" class="nav-link">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+
+        <!-- Hero Section -->
+        <section id="beranda" class="hero-section">
+            <div class="hero-container animate-on-scroll">
+
+                <h1 class="hero-title">
+                    Mengembangkan Media Pembelajaran & Aplikasi Web Interaktif
+                </h1>
+
+                <p class="hero-subtitle">
+                    Halo, saya <strong>Saskia Kirana</strong>. Fokus merancang solusi <em>EdTech </em>  yang intuitif, berefisiensi tinggi, serta menerapkan struktur data dan algoritma yang solid.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#proyek" class="btn btn-primary">
+                        <span>Lihat Proyek</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <a href="#kontak" class="btn btn-secondary">Hubungi Saya</a>
+                    <button id="btnCopyEmail" class="btn btn-outline" aria-label="Salin alamat email Saskia">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                        <span>Salin Email</span>
+                    </button>
+                </div>
+
+                <div class="hero-metrics">
+                    <div class="metric-item">
+                        <span class="metric-value">4+</span>
+                        <span class="metric-label">Proyek Utama</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-item">
+                        <span class="metric-value">10+</span>
+                        <span class="metric-label">Topik Algoritma</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-item">
+                        <span class="metric-value">2025</span>
+                        <span class="metric-label">Angkatan UPI</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tentang Saya -->
+        <section id="tentang" class="section-container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Profil Ringkas</span>
+                <h2 class="section-title">Tentang Saya</h2>
+            </div>
+
+            <div class="about-grid animate-on-scroll">
+                <div class="about-image-wrapper">
+                    <img src="profil.jpg" alt="Foto profil Saskia Kirana" class="about-img" loading="lazy">
+                    <div class="about-image-card">
+                        
+                    <span class="card-icon">
+                        <img src="images/imac.png" alt="Ikon laptop" width="30" height="30">
+                    </span>
+                        <div>
+                            <strong>Focus Area</strong>
+                            <p>Educational Technology</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-content">
+                    <h3>Menghubungkan Ilmu Komputer dengan Metodologi Pembelajaran</h3>
+                    <p>
+                        Saya adalah mahasiswa <strong>Pendidikan Ilmu Komputer Universitas Pendidikan Indonesia (UPI)</strong> asal Cirebon. Ketertarikan saya berpusat pada bagaimana teknologi web dapat dimanfaatkan untuk menyederhanakan konsep-konsep matematika dan ilmu komputer yang kompleks menjadi media interaktif yang mudah dipahami.
+                    </p>
+                    <p>
+                        Selain aktif mengasah logika pemrograman murni melalui algoritma dan struktur data, saya terus mendalami ekosistem pengembangan web modern (HTML, CSS, JavaScript, React, dan TypeScript). Saya berprinsip bahwa kode yang baik tidak hanya efisien, tetapi juga dapat diakses dan memberikan dampak nyata bagi pengguna.
+                    </p>
+
+                    <div class="about-highlights">
+                        <div class="highlight-card">
+                            
+                        <h4><img src="images\education.png" alt="" width="24"> Spesialisasi Akademis</h4>
+                            <p>Pengembangan Media Pembelajaran berbasis Web, Algoritma Pemrograman, dan Psikologi Pendidikan.</p>
+                        </div>
+                        <div class="highlight-card">
+                        <h4><img src="images\work-orientation.png" alt="" width="24"> Orientasi Karir</h4>
+                            <p>Terbuka untuk peluang Magang (Internship), Asisten Laboratorium/Dosen, serta Kolaborasi Proyek Open-Source.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pendidikan & Akademik -->
+        <section id="pendidikan" class="section-container bg-card-section">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Jejak Langkah</span>
+                <h2 class="section-title">Pendidikan & Pengalaman</h2>
+            </div>
+
+            <div class="timeline animate-on-scroll">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2025 — Sekarang</span>
+                        <h3 class="timeline-title">S1 Pendidikan Ilmu Komputer</h3>
+                        <h4 class="timeline-subtitle">Universitas Pendidikan Indonesia (UPI)</h4>
+                        <p>Fokus pada Matematika Informatika, Kalkulus, Algoritma & Struktur Data, serta Pengembangan Web & Media Pembelajaran Interaktif.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2022 — 2025</span>
+                        <h3 class="timeline-title">Sekolah Menengah Atas (MIPA)</h3>
+                        <h4 class="timeline-subtitle">SMA Negeri 1 Plumbon</h4>
+                        <p>Aktif mengeksplorasi logika matematika, konsep dasar informatika, serta pemecahan masalah (problem solving).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Keahlian -->
+        <section id="keahlian" class="section-container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Kompetensi Teknis</span>
+                <h2 class="section-title">Keahlian & Tech Stack</h2>
+            </div>
+
+            <div class="skills-grid animate-on-scroll">
+                <!-- Kategori 1 -->
+                <div class="skill-card">
+                    <div class="skill-card-header">
+                    <div class="skill-icon">
+                        <img src="images\web-design.png" alt="Ikon web design">
+                    </div>
+                        <h3>Frontend Web Development</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Responsive Web Design</span>
+                        <span class="tag">React & TypeScript (Dasar)</span>
+                    </div>
+                </div>
+
+                <!-- Kategori 2 -->
+                <div class="skill-card">
+                    <div class="skill-card-header">
+                    <div class="skill-icon">
+                        <img src="images\structure.png" alt="Ikon struktur data">
+                    </div>
+                        <h3>Core CS & Struktur Data</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="tag">C / Python</span>
+                        <span class="tag">Array & Memory</span>
+                        <span class="tag">Sorting Algorithms</span>
+                        <span class="tag">Stack & Queue</span>
+                        <span class="tag">Graph & Searching</span>
+                        <span class="tag">Hashing</span>
+                    </div>
+                </div>
+
+                <!-- Kategori 3 -->
+                <div class="skill-card">
+                    <div class="skill-card-header">
+                    <div class="skill-icon">
+                        <img src="images\tools.png" alt="Ikon tools">
+                    </div>
+                        <h3>Tools, Database & EdTech</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="tag">Git & GitHub</span>
+                        <span class="tag">SQL & Data Modeling</span>
+                        <span class="tag">Google Gemini API</span>
+                        <span class="tag">Media Pembelajaran Digital</span>
+                        <span class="tag">Instructional Design</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proyek Portofolio -->
+        <section id="proyek" class="section-container bg-card-section">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Proof of Work</span>
+                <h2 class="section-title">Proyek Pilihan</h2>
+                <p class="section-description">Kumpulan hasil karya pemrograman, media pembelajaran interaktif, serta solusi algoritma.</p>
+            </div>
+
+            <!-- Filter -->
+            <div class="project-filters animate-on-scroll" id="projectFilters">
+                <button class="filter-btn active" data-filter="all">Semua Proyek</button>
+                <button class="filter-btn" data-filter="webdev">Web Development</button>
+                <button class="filter-btn" data-filter="edtech">Media Pembelajaran (EdTech)</button>
+                <button class="filter-btn" data-filter="dsa">Struktur Data & Algoritma</button>
+            </div>
+
+            <!-- Grid Proyek -->
+            <div class="projects-grid animate-on-scroll" id="projectsGrid">
+
+                <!-- Proyek 1 -->
+                <article class="project-card" data-category="webdev edtech">
+                    <div class="project-card-header">
+                        <span class="project-type-badge">EdTech & Web App</span>
+                        <h3 class="project-title">Kalkulus Ajaib — Asisten Learning Platform</h3>
+                    </div>
+                    <p class="project-description">
+                        Aplikasi web interaktif pembantu pembelajaran Kalkulus. Dirancang untuk membantu mahasiswa memahami konsep turunan, limit, dan integral melalui perhitungan responsif dan integrasi AI.
+                    </p>
+                    <div class="project-tech-stack">
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">TypeScript</span>
+                        <span class="tech-badge">Gemini API</span>
+                        <span class="tech-badge">Vercel</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://kalkulus-ajaib-kelompok-9.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-btn btn-primary-sm">
+                            <span>Live Demo</span>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Proyek 2 -->
+                <article class="project-card" data-category="dsa webdev">
+                    <div class="project-card-header">
+                        <span class="project-type-badge">Struktur Data & Algoritma</span>
+                        <h3 class="project-title">Tugas Besar Algoritma & Pemrograman</h3>
+                    </div>
+                    <p class="project-description">
+                        Implementasi komprehensif logika pemrograman mendasar, manipulasi array, manipulasi string, dan pengorganisasian memori untuk penyelesaian studi kasus komputasi terstruktur.
+                    </p>
+                    <div class="project-tech-stack">
+                        <span class="tech-badge">C / Python</span>
+                        <span class="tech-badge">Algoritma</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://drive.google.com/file/d/1QGKnGjQaupjn34trhHJ3ANUSObVlwUzS/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="project-btn btn-secondary-sm">
+                            <span>Lihat Dokumentasi</span>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Proyek 3 -->
+                <article class="project-card" data-category="edtech">
+                    <div class="project-card-header">
+                        <span class="project-type-badge">Media Pembelajaran</span>
+                        <h3 class="project-title">Video Interaktif Komputer & Komponen Penyusunnya</h3>
+                    </div>
+                    <p class="project-description">
+                        Media pembelajaran multimedia instruksional yang menjelaskan arsitektur komputer dasar, perangkat keras (hardware), dan sistem pemrosesan data untuk peserta didik.
+                    </p>
+                    <div class="project-tech-stack">
+                        <span class="tech-badge">Instructional Design</span>
+                        <span class="tech-badge">Video Pedagogy</span>
+                        <span class="tech-badge">EdTech</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://drive.google.com/file/d/1022RebYyYybYIsMT6k089-PrHafnq5NX/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="project-btn btn-secondary-sm">
+                            <span>Tonton Video</span>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Proyek 4 -->
+                <article class="project-card" data-category="dsa">
+                    <div class="project-card-header">
+                        <span class="project-type-badge">Competitive Programming</span>
+                        <h3 class="project-title">Problem Solving Algoritma GEMASTIK</h3>
+                    </div>
+                    <p class="project-description">
+                        Kumpulan penyelesaian soal-soal pemrograman kompetitif standar nasional dengan optimasi kompleksitas waktu (Time Complexity) dan ruang (Space Complexity).
+                    </p>
+                    <div class="project-tech-stack">
+                        <span class="tech-badge">Problem Solving</span>
+                        <span class="tech-badge">Logic Optimization</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://drive.google.com/drive/folders/1kxlTE1lhFuRE1fvvzY9l6UHR1mas8M2k?usp=drive_link" target="_blank" rel="noopener noreferrer" class="project-btn btn-secondary-sm">
+                            <span>Buka Repository</span>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Kontak & Form -->
+        <section id="kontak" class="section-container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Komunikasi</span>
+                <h2 class="section-title">Mari Berkolaborasi</h2>
+                <p class="section-description">Terbuka untuk diskusi akademis, penawaran magang, atau proyek kolaboratif.</p>
+            </div>
+
+            <div class="contact-grid animate-on-scroll">
+                <!-- Info Kontak -->
+                <div class="contact-info-wrapper">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <img src="images\email.png" alt="Ikon email">
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-label">Email Resmi</span>
+                            <a href="mailto:saskiakirana533@gmail.com" class="contact-value">saskiakirana533@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <img src="images\whatsapp.png" alt="Ikon WhatsApp">
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-label">WhatsApp</span>
+                            <a href="https://wa.me/6285722453153" target="_blank" rel="noopener noreferrer" class="contact-value">+62 857-2245-3153</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <img src="images\location.png" alt="Ikon lokasi">
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-label">Lokasi Domisili</span>
+                            <span class="contact-value">Bandung / Cirebon, Jawa Barat</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Kontak -->
+                <div class="contact-form-wrapper">
+                    <form id="formKontak" class="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="nama">Nama Lengkap <span class="required">*</span></label>
+                            <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" autocomplete="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Alamat Email <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" placeholder="nama@instansi.com" autocomplete="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subjek">Subjek Pesan <span class="required">*</span></label>
+                            <input type="text" id="subjek" name="subjek" placeholder="Tujuan pesan (Misal: Tawaran Magang / Diskusi)" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pesan">Pesan <span class="required">*</span></label>
+                            <textarea id="pesan" name="pesan" rows="4" placeholder="Tuliskan pesan lengkap Anda di sini..." required></textarea>
+                            <div class="character-count" id="jumlahKarakter">0 / 500 karakter</div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Kirim Pesan</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                        </button>
+
+                        <div id="pesanForm" class="form-feedback" aria-live="polite"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="logo-text text-white">Saskia Kirana<span class="dot">.</span></span>
+                <p>Mahasiswa Pendidikan Ilmu Komputer UPI yang memiliki inovasi dalam media pembelajaran dan pengembangan web modern.</p>
+            </div>
+
+            <div class="footer-links-group">
+                <div class="footer-col">
+                    <h4>Navigasi Cepat</h4>
+                    <ul>
+                        <li><a href="#beranda">Beranda</a></li>
+                        <li><a href="#tentang">Tentang Saya</a></li>
+                        <li><a href="#pendidikan">Akademik</a></li>
+                        <li><a href="#proyek">Proyek</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Jejaring Profesional</h4>
+                    <ul>
+                        <li>
+                            <a href="https://www.linkedin.com/in/saskia-kirana-2b635737b"
+                            target="_blank" rel="noopener noreferrer">
+                                <img src="images\linkedln.png" alt="LinkedIn" width="20">
+                                LinkedIn
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/saskiakirana533/"
+                            target="_blank" rel="noopener noreferrer">
+                                <img src="images\ig.png" alt="Instagram" width="20">
+                                Instagram
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p id="teksHakCipta">&copy; 2026 Saskia Kirana. Hak cipta dilindungi undang-undang.</p>
+        </div>
+    </footer>
+
+    <!-- JS Utama -->
+    <script src="script.js"></script>
+</body>
+
+</html>
